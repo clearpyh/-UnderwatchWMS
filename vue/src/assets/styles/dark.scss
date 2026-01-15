@@ -1,0 +1,83 @@
+html.dark {
+  /* ==============================================
+     Dark Mode Variables (dark.scss)
+     ============================================== */
+
+  /* 页面背景 - Page Background */
+  /* 浅灰 #f0f2f5 → 深黑 #070707 */
+  --bg-page: #070707;
+
+  /* 容器背景 - Container Background */
+  /* 白色 → 黑灰 #141414 */
+  --bg-container: #161618;
+  --bg-overlay: #1d1e1f;
+  --bg-color-overlay: #1d1e1f;
+  --default-bg-color: var(--bg-page);
+  --default-box-color: var(--bg-container);
+
+  /* 文本颜色 - Text Color */
+  /* 深色 → 浅灰 #E5EAF3 / #CFD3DC */
+  --text-primary: #E5EAF3;
+  --text-regular: #CFD3DC;
+  --text-secondary: #A3A6AD;
+  --text-placeholder: #8D9095;
+
+  /* 边框颜色 - Border Color */
+  /* #dcdfe6 → 半透明白色 (Translucent White) */
+  --border-color-base: rgba(255, 255, 255, 0.1);
+  --border-color-light: rgba(255, 255, 255, 0.08);
+  --border-color-lighter: rgba(255, 255, 255, 0.06);
+  --border-color-extra-light: rgba(255, 255, 255, 0.04);
+  --default-border-base: var(--border-color-base);
+  --default-border-light: var(--border-color-light);
+  --default-border-lighter: var(--border-color-lighter);
+  --default-border-extra-light: var(--border-color-extra-light);
+
+  /* 阴影 - Shadow */
+  --box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.6);
+  --box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.5);
+
+  /* Element Plus Dark Mode Overrides */
+  --el-fill-color-blank: var(--bg-container);
+  --el-bg-color: var(--bg-container);
+  --el-bg-color-page: var(--bg-page);
+  --el-bg-color-overlay: var(--bg-overlay);
+  --el-text-color-primary: var(--text-primary);
+  --el-text-color-regular: var(--text-regular);
+  --el-text-color-secondary: var(--text-secondary);
+  --el-text-color-placeholder: var(--text-placeholder);
+  --el-border-color: var(--border-color-base);
+  --el-border-color-light: var(--border-color-light);
+  --el-border-color-lighter: var(--border-color-lighter);
+  --el-border-color-extra-light: var(--border-color-extra-light);
+  
+  /* One Dark Pro Code Block Colors (Example mapping) */
+  --code-bg: #252525;
+  --code-text: #abb2bf;
+}
+
+html.dark {
+  --nav-radius: 20px;
+  /* 导航栏暗黑适配 */
+  --nav-bg-color: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+  /* 暗黑模式下悬停也使用特浅蓝可能会太亮，这里调整为深一点的浅蓝，或者保持一致看效果 */
+  --nav-active-color: rgba(64, 158, 255, 0.2);
+  --nav-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  --nav-hover-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+  --nav-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* 滚动条颜色 */
+  scrollbar-color: rgba(255,255,255,0.2) transparent;
+}
+html.dark ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.2);
+  border-radius: var(--custom-radius);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}

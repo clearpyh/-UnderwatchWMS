@@ -1,0 +1,172 @@
+/* ==============================================
+   Modern UI & Glassmorphism System
+   ============================================== */
+
+/* 1. 全局动态背景 (Mesh Gradient) */
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float-up {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+body {
+  /* 亮色模式背景：极光流体 */
+  background: linear-gradient(-45deg, #f0f2f5, #e0e7ff, #f0f2f5, #e6f7ff);
+  background-size: 400% 400%;
+  animation: gradient-flow 15s ease infinite;
+  min-height: 100vh;
+}
+
+html.dark body {
+  /* 暗黑模式背景：深空流体 */
+  background: linear-gradient(-45deg, #070707, #0f172a, #1a1a1a, #0f172a);
+  background-size: 400% 400%;
+}
+
+/* 2. 玻璃拟态基础类 (Glassmorphism) */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+html.dark .glass-effect {
+  background: rgba(20, 20, 20, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* 3. 卡片现代化 (Modern Cards) */
+.el-card {
+  border: none !important;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+html.dark .el-card {
+  background: rgba(30, 30, 30, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+.el-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1) !important;
+}
+
+html.dark .el-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* 4. 按钮现代化 (Modern Buttons) */
+.el-button {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s !important;
+}
+
+/* 强制主要按钮文字为亮白色 */
+.el-button--primary {
+  background: linear-gradient(135deg, var(--el-color-primary), var(--el-color-primary-light-3)) !important;
+  border: none !important;
+  box-shadow: 0 4px 14px rgba(64, 158, 255, 0.3);
+  color: #ffffff !important; /* 强制亮白字 */
+}
+
+/* 强制其他常用有色按钮也为亮白字 */
+.el-button--success,
+.el-button--warning,
+.el-button--danger,
+.el-button--info {
+  color: #ffffff !important;
+}
+
+/* 修复 Plain 类型的按钮在强制白字后看不清的问题 */
+/* 将 Plain 按钮背景改为半透明深色，以保证白字可见且保留层次感 */
+.el-button--primary.is-plain {
+  background: rgba(64, 158, 255, 0.85) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+}
+
+.el-button--success.is-plain {
+  background: rgba(103, 194, 58, 0.85) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+}
+
+.el-button--warning.is-plain {
+  background: rgba(230, 162, 60, 0.85) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+}
+
+.el-button--danger.is-plain {
+  background: rgba(245, 108, 108, 0.85) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+}
+
+.el-button--info.is-plain {
+  background: rgba(144, 147, 153, 0.85) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+}
+
+/* Plain 按钮悬停效果 */
+.el-button.is-plain:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.el-button--primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(64, 158, 255, 0.4);
+}
+
+/* 5. 表单输入框 (Modern Inputs) */
+.el-input__wrapper {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.3s !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+html.dark .el-input__wrapper {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px var(--el-color-primary), 0 0 0 4px rgba(var(--el-color-primary-rgb), 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 6. 滚动条美化 (Custom Scrollbar) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(144, 147, 153, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(144, 147, 153, 0.5);
+}

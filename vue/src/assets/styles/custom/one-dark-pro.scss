@@ -1,0 +1,35 @@
+/* 代码块暗色样式（简版 One Dark Pro 映射） */
+pre,
+code,
+.markdown-body pre,
+.markdown-body code {
+  background: var(--code-bg);
+  color: var(--code-text);
+  border-radius: var(--custom-radius);
+}
+
+.markdown-body pre code {
+  background: transparent;
+}
+
+/* 高亮关键字示例，可按需扩展 */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #7f848e;
+}
+.token.punctuation { color: #abb2bf; }
+.token.selector { color: #c678dd; }
+.token.property { color: #d19a66; }
+.token.boolean, .token.number { color: #d19a66; }
+.token.tag { color: #e06c75; }
+.token.string { color: #98c379; }
+.token.function { color: #61afef; }
+.token.keyword { color: #c678dd; }
+.token.operator { color: #56b6c2; }
+.token.attr-name { color: #e06c75; }
+.token.attr-value { color: #98c379; }
+.token.constant { color: #56b6c2; }
+.token.class-name { color: #e5c07b; }
+.token.builtin { color: #56b6c2; }

@@ -1,0 +1,109 @@
+:root {
+  /* ==============================================
+     1. 基础语义层 (Basic Semantic Layer)
+     ============================================== */
+
+  /* 字体设置 - Typography */
+  --el-font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  --font-family-base: var(--el-font-family);
+  --el-font-weight-primary: 500;
+
+  /* 圆角设置 - Radius */
+  --custom-radius: 4px; /* 全局圆角控制变量 */
+
+  /* 组件尺寸 - Component Size */
+  --el-component-size: 32px;
+  --el-component-custom-height: var(--el-component-size);
+
+  /* 主色调 - Primary */
+  --color-primary: #324157;
+  
+  /* 辅助色 - Semantic */
+  --color-success: #30B08F;
+  --color-warning: #FEC171;
+  --color-danger: #C03639;
+  --color-info: #909399;
+  --color-error: #E65D6E;
+
+  /* 背景色 - Background */
+  --bg-page: #f0f2f5;
+  --bg-container: #ffffff;
+  --bg-overlay: #ffffff;
+  --bg-color-overlay: #ffffff; /* Element Plus compatible name */
+  --default-bg-color: #f0f2f5;
+  --default-box-color: #ffffff;
+
+  /* 文本色 - Text */
+  --text-primary: #303133;
+  --text-regular: #606266;
+  --text-secondary: #909399;
+  --text-placeholder: #a8abb2;
+
+  /* 边框色 - Border */
+  --border-color-base: #dcdfe6;
+  --border-color-light: #e4e7ed;
+  --border-color-lighter: #ebeef5;
+  --border-color-extra-light: #f2f6fc;
+  --default-border-base: #dcdfe6;
+  --default-border-light: #e4e7ed;
+  --default-border-lighter: #ebeef5;
+  --default-border-extra-light: #f2f6fc;
+  
+  /* 阴影 - Shadow */
+  --box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12);
+  --box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+  /* 导航胶囊变量 */
+  --nav-radius: 20px;
+  --nav-bg-color: linear-gradient(135deg, #324157, #3A71A8);
+  /* 特别特别浅的蓝色：AliceBlue (#F0F8FF) 或更浅的变体 */
+  --nav-active-color: ;
+  --nav-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --nav-hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  --nav-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ==============================================
+     2. 框架映射层 (Framework Mapping Layer)
+     ============================================== */
+  
+  /* Element Plus 字体映射 */
+  /* Element Plus uses --el-font-family by default, but we ensure it matches ours */
+
+  /* Element Plus 圆角映射 */
+  --el-border-radius-base: var(--custom-radius);
+  --el-border-radius-small: calc(var(--custom-radius) * 0.75);
+  --el-border-radius-round: calc(var(--custom-radius) * 5);
+  --el-border-radius-circle: 100%;
+
+  /* Element Plus 颜色映射 */
+  --el-color-primary: var(--color-primary);
+  --el-color-primary-light: #3A71A8;
+  --el-color-success: var(--color-success);
+  --el-color-warning: var(--color-warning);
+  --el-color-danger: var(--color-danger);
+  --el-color-info: var(--color-info);
+  --el-color-error: var(--color-error);
+
+  /* Element Plus 背景映射 */
+  --el-bg-color: var(--bg-container);
+  --el-bg-color-page: var(--bg-page);
+  --el-bg-color-overlay: var(--bg-overlay);
+  
+  /* Element Plus 文本映射 */
+  --el-text-color-primary: var(--text-primary);
+  --el-text-color-regular: var(--text-regular);
+  --el-text-color-secondary: var(--text-secondary);
+  --el-text-color-placeholder: var(--text-placeholder);
+
+  /* Element Plus 边框映射 */
+  --el-border-color: var(--border-color-base);
+  --el-border-color-light: var(--border-color-light);
+  --el-border-color-lighter: var(--border-color-lighter);
+  --el-border-color-extra-light: var(--border-color-extra-light);
+}
+
+/* ==============================================
+   3. 暗黑模式 (Dark Mode) - 已迁移至 dark.scss
+   ============================================== */
+/* html.dark 样式已移除，请在 dark.scss 中管理 */
+
