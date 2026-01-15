@@ -116,13 +116,34 @@ npm run dev
 > 更多截图请查看 `backend/docs/` 目录
 
 ### 首页与数据看板
-![首页](backend/docs/首页.png)
+<img width="1452" height="1038" alt="image" src="https://github.com/user-attachments/assets/fd13ec8d-3619-49b9-93cb-029c34ba6152" />
+<img width="1453" height="1040" alt="image" src="https://github.com/user-attachments/assets/51764225-ba60-4327-978b-c2e1dbf38e3f" />
+<img width="1458" height="1043" alt="image" src="https://github.com/user-attachments/assets/ccd45000-eabf-4c61-b8eb-1e5fc58d72cd" />
+<img width="1458" height="1084" alt="image" src="https://github.com/user-attachments/assets/a1c23353-614a-4c51-885a-6ae52d96d202" />
+
 
 ### 入库管理
-![入库单](backend/docs/入库单.jpg)
+<img width="1453" height="1051" alt="image" src="https://github.com/user-attachments/assets/bced13ea-b862-44a7-a3fa-ba310588fa06" />
+<img width="1450" height="1048" alt="image" src="https://github.com/user-attachments/assets/62322fcf-8f8f-45c0-81eb-7268724d5e0a" />
+<img width="1453" height="1045" alt="image" src="https://github.com/user-attachments/assets/ca8d22b2-3ae1-42fc-8cac-f0f498643c45" />
+<img width="1459" height="1040" alt="image" src="https://github.com/user-attachments/assets/59e3069d-429c-4755-9a3b-c134e5d6199c" />
+<img width="1458" height="1043" alt="image" src="https://github.com/user-attachments/assets/164b1246-361d-42f2-b6b9-b2763248fd1a" />
+<img width="1454" height="1043" alt="image" src="https://github.com/user-attachments/assets/899603c8-549d-41d3-89ad-e40f5d4592d5" />
+<img width="1453" height="1047" alt="image" src="https://github.com/user-attachments/assets/975fca2c-d258-4b1e-96c4-b1f11bdf4fd9" />
+<img width="1464" height="1041" alt="image" src="https://github.com/user-attachments/assets/60b09fd4-8ce3-4a42-974b-54136e589244" />
+<img width="1462" height="1037" alt="image" src="https://github.com/user-attachments/assets/cec663f4-4668-4b8c-8a63-ab2972474467" />
+用户角色管理
+<img width="1457" height="1043" alt="image" src="https://github.com/user-attachments/assets/6425551a-3761-443e-a5b7-6dd0acaa99a1" />
+通知公告
+<img width="1455" height="1043" alt="image" src="https://github.com/user-attachments/assets/563c4861-6128-47b5-b2fa-494d08f946b5" />
+夜间模式
+<img width="1455" height="1040" alt="image" src="https://github.com/user-attachments/assets/91d91e80-d6af-4553-98a8-4fec8114480a" />
+个人中心
+<img width="1456" height="1033" alt="image" src="https://github.com/user-attachments/assets/81e9367f-0f43-4b93-a9d4-e2653950485c" />
 
 ### 库存查询
-![库存明细](backend/docs/库存明细.jpg)
+<img width="1459" height="1041" alt="image" src="https://github.com/user-attachments/assets/cee5a914-6062-407b-b8a2-1df5a980650b" />
+
 
 ---
 
